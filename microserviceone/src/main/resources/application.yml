@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: microservice-one
+server:
+  servlet:
+    context-path: /
+
+  port: 8661
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://registration:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    hostname: Rishi
